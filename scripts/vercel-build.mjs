@@ -39,7 +39,7 @@ await build({
 // Vercel function config
 writeFileSync(
   resolve(outputDir, "functions/render.func/.vc-config.json"),
-  JSON.stringify({ runtime: "nodejs20.x", handler: "index.mjs" }, null, 2),
+  JSON.stringify({ runtime: "nodejs20.x", handler: "index.mjs", maxDuration: 30 }, null, 2),
 );
 
 // Vercel output routing config
