@@ -1,0 +1,64 @@
+Init
+
+# Conflicts:
+#	.gitignore
+#	README.md
+#	bun.lock
+#	components.json
+#	package-lock.json
+#	package.json
+#	public/favicon.ico
+#	public/robots.txt
+#	src/lib/utils.ts
+#	tsconfig.json
+#	vite.config.ts
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Author:    Felix Tellmann <felix@tellmann.co.za>
+#
+# interactive rebase in progress; onto 3744db0
+# Last command done (1 command done):
+#    pick f16363c # Init
+# Next commands to do (21 remaining commands):
+#    pick deccddb # Add routegen tree
+#    pick 064d40f # Pre logo Implementation
+# You are currently rebasing branch 'main' on '3744db0'.
+#
+# Changes to be committed:
+#	new file:   .cta.json
+#	new file:   .cursorrules
+#	modified:   .gitignore
+#	modified:   README.md
+#	new file:   biome.json
+#	modified:   bun.lock
+#	modified:   components.json
+#	modified:   package-lock.json
+#	modified:   package.json
+#	modified:   public/favicon.ico
+#	new file:   public/logo192.png
+#	new file:   public/logo512.png
+#	new file:   public/manifest.json
+#	modified:   public/robots.txt
+#	new file:   public/tanstack-circle-logo.png
+#	new file:   public/tanstack-word-logo-white.svg
+#	new file:   src/components/Header.tsx
+#	new file:   src/env.ts
+#	new file:   src/integrations/tanstack-query/devtools.tsx
+#	new file:   src/integrations/tanstack-query/root-provider.tsx
+#	modified:   src/lib/utils.ts
+#	new file:   src/orpc/client.ts
+#	new file:   src/orpc/router/index.ts
+#	new file:   src/orpc/router/todos.ts
+#	new file:   src/orpc/schema.ts
+#	new file:   src/polyfill.ts
+#	new file:   src/router.tsx
+#	new file:   src/routes/__root.tsx
+#	new file:   src/routes/api.$.ts
+#	new file:   src/routes/api.rpc.$.ts
+#	new file:   src/routes/index.tsx
+#	new file:   src/styles.css
+#	modified:   tsconfig.json
+#	modified:   vite.config.ts
+git push origin maigit push origin main --fgit push origin main --forceorcen --force#
