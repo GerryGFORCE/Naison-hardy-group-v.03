@@ -14,22 +14,25 @@ console.log("Creating Vercel Build Output...");
 const outputDir = resolve(root, ".vercel/output");
 if (existsSync(outputDir)) rmSync(outputDir, { recursive: true });
 mkdirSync(resolve(outputDir, "static"), { recursive: true });
-mkdirSync(resolve(outputDir, "functions/render.func"), { recursive: true });
 
 // Copy static client assets
 cpSync(resolve(root, "dist/client"), resolve(outputDir, "static"), {
   recursive: true,
 });
 
-// Bundle server + all dependencies into a single file
+// Bundle server + all dependencies, with splitting so dynamic imports work
 await build({
   entryPoints: [resolve(root, "scripts/vercel-handler.mjs")],
   bundle: true,
-  outfile: resolve(outputDir, "functions/render.func/index.mjs"),
+  outdir: resolve(outputDir, "functions/render.func"),
   format: "esm",
   platform: "node",
   target: "node20",
   external: ["node:*"],
+  splitting: true,
+  chunkNames: "chunks/[hash]",
+  entryNames: "index",
+  outExtension: { ".js": ".mjs" },
   minify: false,
 });
 
