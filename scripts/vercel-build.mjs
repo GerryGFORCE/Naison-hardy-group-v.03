@@ -29,6 +29,9 @@ await build({
   platform: "node",
   target: "node20",
   external: ["node:*"],
+  banner: {
+    js: 'import { createRequire as __createRequire__ } from "node:module"; var require = __createRequire__(import.meta.url);',
+  },
   splitting: true,
   chunkNames: "chunks/[hash]",
   entryNames: "index",
